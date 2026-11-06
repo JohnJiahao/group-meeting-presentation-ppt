@@ -188,6 +188,21 @@ python scripts/adapt_template.py 我的模板.pptx -o tpl_map.json
 | **结论** | |
 | ![结论](docs/example/07-conclusion.png) | |
 
+### 第二个例子：FD-LLM（换一篇论文、换一套 deck）
+
+**《Large language models for explainable fault diagnosis of machines》**
+（*Engineering Applications of Artificial Intelligence*, 163 (2026) 113131，
+DOI: [10.1016/j.engappai.2025.113131](https://doi.org/10.1016/j.engappai.2025.113131)）。
+这次用的是用户自己的旧 deck 当模板（先 `adapt_template.py` 认角色），共 19 页：
+
+| 封面（中文题居中、汇报人对齐图标） | 整体框架与全流程 |
+|---|---|
+| ![封面](docs/example/fdllm-01-cover.png) | ![框架](docs/example/fdllm-02-framework.png) |
+| **消融实验 1（输入表征：统计 / FFT / 包络谱）** | **可解释性（RAGAS + 案例）** |
+| ![消融](docs/example/fdllm-03-ablation.png) | ![可解释](docs/example/fdllm-04-explain.png) |
+
+原文没有部件级消融，这里按 skill 的规则写明“未提供”，再用论文里的**输入表征替换**做等价单变量实验，数字全部来自 Table 4 / Table 8。
+
 ## 🎨 自带模板 `assets/template.pptx`
 
 仓库里放了一份**脱敏后的空白模板**（18 页版式，直接可用，也可以换成你自己的 deck）：

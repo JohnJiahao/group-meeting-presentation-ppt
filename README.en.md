@@ -79,6 +79,20 @@ pip install python-pptx PyMuPDF lxml
 **Tested on**: Windows 10/11, Python 3.12, `python-pptx 1.0`, `PyMuPDF 1.24`.
 `pdf_figs.py`, `adapt_template.py` and `inspect_template.py` are cross-platform; only the PNG export step is easiest on Windows.
 
+**⚠️ Model requirement: vision**
+
+This skill reads the paper's figures — which two classes the confusion matrix mixes up, whether the curves converge,
+whether t-SNE clusters separate, which block of the method figure maps to which module, and whether an exported slide
+has overlapping text. All of that needs a **model that accepts image input**.
+
+| Model | What you get |
+|---|---|
+| Vision-capable (GPT-4o / Claude / Gemini / DeepSeek-VL, …) | Full quality: numbers + figure-based conclusions + layout self-check |
+| Text-only | Markdown, figure cropping and templating still work, but **it cannot see inside the figures**; captions rely on the paper text and you must verify them |
+
+Workaround: draft content with a multimodal model, then polish formatting with a cheaper one — or send key figures
+to a vision model separately and paste the answers back into the conversation.
+
 ## 🚀 Quick start
 
 No commands, no flags — **open a chat, drop the paper in, ask in plain language**.
@@ -327,6 +341,9 @@ and which box to rewrite.
 - **Numbers must come from the paper** — no estimates, no invention. If something is missing, write “not reported”.
 
 ## ❓ FAQ
+
+**My model can't see images — can I still use it?**
+Yes, with a caveat. Markdown, cropping, templating and export all work; the difference is that **it cannot see inside the figures** — where the confusion matrix errs, whether curves converge, which block of the method figure is which. It will say “I can't see that figure” instead of inventing a conclusion. Fix: use a multimodal model for the content pass, or send key figures to a vision model and paste the answers back.
 
 **My field has no dataset — what then?**
 Skip the dataset slide. The mandatory “experimental setup” slide covers splits, hyperparameters, training strategy and metrics. The skill never fabricates data.

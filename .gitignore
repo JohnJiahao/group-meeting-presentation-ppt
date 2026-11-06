@@ -1,0 +1,17 @@
+﻿# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# 生成物（示例/临时）
+figs/
+output/
+*.pptx
+!assets/*.pptx
+
+# 系统
+.DS_Store
+Thumbs.db
+desktop.ini
+

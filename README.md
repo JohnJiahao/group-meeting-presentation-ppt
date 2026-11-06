@@ -176,15 +176,17 @@ python scripts/adapt_template.py 我的模板.pptx -o tpl_map.json
 
 以 **《Signal–text fusion multimodal large language model for few-shot fault diagnosis of industrial robots》** 论文为例
 （*Robotics and Computer-Integrated Manufacturing*, 2027, 103: 103366，DOI: [10.1016/j.rcim.2026.103366](https://doi.org/10.1016/j.rcim.2026.103366)），
-下面 6 页全部由本 skill 生成（汇报人与日期按占位符显示）：
+下面 7 页全部由本 skill 生成（汇报人与日期按占位符显示）：
 
-| 封面 | 摘要 |
+| 封面 | 摘要（只放摘要） |
 |---|---|
 | ![封面](docs/example/01-cover.png) | ![摘要](docs/example/02-abstract.png) |
-| **整体框架与全流程（创新点第一页）** | **创新点（白话解释 + 方法图局部）** |
-| ![框架](docs/example/03-framework.png) | ![创新点](docs/example/04-innovation.png) |
-| **对比实验（数值 + 读图结论）** | **结论** |
-| ![实验](docs/example/05-experiment.png) | ![结论](docs/example/06-conclusion.png) |
+| **问题 / 方法（红色小标题 + 黑色正文）** | **整体框架与全流程（创新点第一页）** |
+| ![问题](docs/example/03-problems.png) | ![框架](docs/example/04-framework.png) |
+| **创新点（标签高亮 + 方法图局部）** | **对比实验（数值 + 读图结论）** |
+| ![创新点](docs/example/05-innovation.png) | ![实验](docs/example/06-experiment.png) |
+| **结论** | |
+| ![结论](docs/example/07-conclusion.png) | |
 
 ## 🎨 自带模板 `assets/template.pptx`
 

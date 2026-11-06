@@ -123,7 +123,7 @@ Anything missing gets asked:
 | Abstract/conclusion language | Chinese or English? They can differ (CC / EE / CE / EC) |
 | Presenter | Whose name goes on the cover? |
 | Date | When is the talk? |
-| Template | Bundled `assets/template.pptx`, or your last deck? |
+| Template | “Use your own uploaded deck, or the bundled `assets/template.pptx`?” — no upload means bundled |
 
 ### 3. What you get
 

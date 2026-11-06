@@ -118,7 +118,7 @@ pip install python-pptx PyMuPDF lxml
 | 摘要/结论语言 | 中文还是英文？两处可以不一样（中中 / 英英 / 中英 / 英中） |
 | 汇报人 | 封面写谁的名字？ |
 | 日期 | 哪天汇报？ |
-| 模板 | 用自带的 `assets/template.pptx`，还是你上次的 deck？ |
+| 模板 | 「模板用你自己上传的那份，还是用自带的 `assets/template.pptx`？」——不传就用自带的 |
 
 ### 第 3 步：看它交付什么
 

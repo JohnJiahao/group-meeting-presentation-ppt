@@ -1,6 +1,6 @@
 ---
 name: group-meeting-presentation-ppt
-description: Group meeting presentation-PPT（组会文献阅读汇报）. Use when the user prepares a group-meeting literature report following their fixed 通用文献阅读PPT模板/精简定制版 — Chinese phrasings like 组会汇报、文献汇报、讲这篇paper、按模板做文献阅读PPT、通用文献阅读模板、摘要翻译/创新点/实验/结论翻译 五个模块。 Fills the 5-module slide content (论文基本信息、摘要翻译、创新点、实验、结论翻译) from a paper PDF/DOI/text. Also builds the actual .pptx by reusing the user's previous deck as a visual template (套用上次汇报的PPT模板生成), with auto figure/table cropping from the PDF. Not for Nature-style decks or from-scratch scientific presentations — use nature-paper2ppt for those.
+description: Group meeting presentation-PPT（组会文献阅读汇报）. Use when the user prepares a group-meeting literature report following their fixed 通用文献阅读PPT模板/精简定制版 — Chinese phrasings like 组会汇报、组会PPT、论文汇报、文献汇报、文献汇报PPT、讲这篇paper、按模板做文献阅读PPT、通用文献阅读模板、摘要翻译/创新点/实验/结论翻译 五个模块。 Fills the 5-module slide content (论文基本信息、摘要翻译、创新点、实验、结论翻译) from a paper PDF/DOI/text. Also builds the actual .pptx by reusing the user's previous deck as a visual template (套用上次汇报的PPT模板生成), with auto figure/table cropping from the PDF. Not for Nature-style decks or from-scratch scientific presentations — use nature-paper2ppt for those.
 ---
 
 # Group meeting presentation-PPT（组会文献阅读汇报）
